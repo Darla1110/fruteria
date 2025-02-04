@@ -1,0 +1,77 @@
+/* Establecer fondo de imagen para todo el cuerpo de la página */
+body {
+    background-image: url('fondo.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+    background-position: center center; /* Centra la imagen de fondo */
+    background-attachment: fixed; /* Hace que el fondo no se desplace al hacer scroll */
+    margin: 0;
+    font-family: Arial, sans-serif; /* Puedes cambiar la fuente si lo prefieres */
+    color: white; /* Color de texto general */
+}
+
+/* Estilo del encabezado */
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+header img {
+    width: 100%; /* La imagen de la frutería cubre todo el ancho */
+    max-width: 600px; /* Limita el tamaño máximo de la imagen */
+    height: auto;
+    border-radius: 10px; /* Borde redondeado a la imagen */
+}
+
+/* Título principal */
+h1 {
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+/* Estilo del menú de navegación */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente */
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white; /* Color de texto del enlace */
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff9900; /* Cambio de color al pasar el ratón sobre el enlace */
+}
+
+/* Estilo del pie de página */
+footer {
+    text-align: center;
+    color: white;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro con opacidad */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Asegurarse de que los elementos no se solapen en dispositivos pequeños */
+@media (max-width: 768px) {
+    header img {
+        width: 80%; /* La imagen de la frutería será más pequeña en pantallas pequeñas */
+    }
+
+    nav ul li {
+        display: block; /* Los enlaces del menú se apilan en pantallas pequeñas */
+        margin: 10px 0;
+    }
+}

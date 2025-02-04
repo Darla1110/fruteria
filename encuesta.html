@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta</title>
+</head>
+<body>
+    <h2>Encuesta de Satisfacción</h2>
+    <form action="procesar_encuesta.php" method="POST">
+        <label for="calidad">¿Qué calidad manejan en la frutería?</label>
+        <select id="calidad" name="calidad" required>
+            <option value="Buena">Buena</option>
+            <option value="Mala">Mala</option>
+            <option value="Intermedio">Intermedio</option>
+        </select>
+
+        <label for="trato">¿Qué trato le dan cuando realiza sus compras?</label>
+        <select id="trato" name="trato" required>
+            <option value="Buena">Buena</option>
+            <option value="Mala">Mala</option>
+            <option value="Intermedio">Intermedio</option>
+        </select>
+
+        <label for="sugerencia">¿Tienes alguna sugerencia de mejora?</label>
+        <textarea id="sugerencia" name="sugerencia" maxlength="500" required></textarea>
+
+        <label for="transferencia">¿Te gustaría que contaran con la posibilidad de transferencia bancaria?</label>
+        <input type="radio" id="si" name="transferencia" value="1" required> Sí
+        <input type="radio" id="no" name="transferencia" value="0" required> No
+
+        <button type="submit">Enviar Encuesta</button>
+    </form>
+</body>
+</html>
